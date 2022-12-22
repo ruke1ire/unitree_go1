@@ -29,3 +29,6 @@ RUN mkdir build && cd build && cmake ../ && make
 
 WORKDIR /home/catkin_ws
 RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; catkin_make'
+
+COPY unitree_go1_entrypoint.sh /home/unitree_go1_entrypoint.sh
+ENTRYPOINT ["/home/unitree_go1_entrypoint.sh"]
