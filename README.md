@@ -12,7 +12,6 @@ This repository setups a ROS environment for Unitree Go1 using Docker.
 ```console
 $ git clone --recursive https://github.com/ruke1ire/unitree_go1
 $ cd unitree_go1
-$ git submodule 
 $ docker build -t unitree_go1 .
 $ rocker --x11 --nvidia --privileged unitree_go1
 ```
